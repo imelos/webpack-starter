@@ -27,6 +27,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
     }),
+    new CopyWebpackPlugin([
+      { from: Path.resolve(__dirname, '../src/assets/images/static'), to: 'src/assets/images/static' }
+    ]),
   ],
   resolve: {
     alias: {
@@ -49,6 +52,15 @@ module.exports = {
           }
         }
       },
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader',
+          options: {
+            attrs: [':data-src']
+          }
+        }
+      }
     ]
   }
 };
