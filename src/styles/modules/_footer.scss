@@ -1,0 +1,37 @@
+.footer-inner {
+  width: 1200px;
+  height: 100%;
+  //background-color: red;
+  justify-content: space-between;
+  display: flex;
+}
+
+.footer-social-list {
+  display: flex;
+  height: 100%;
+}
+
+.footer-social-list-i {
+  width: 140px;
+  height: 100%;
+  align-items: center;
+  //justify-content: center;
+  display: flex;
+}
+
+.footer-menu-list {
+  display: flex;
+  height: 100%;
+}
+
+.footer-menu-list-i {
+  width: 140px;
+  height: 100%;
+  align-items: center;
+  //justify-content: center;
+  text-align: center;
+  display: flex;
+  a {
+    color: #fff;
+  }
+}
