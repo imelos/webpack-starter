@@ -3,6 +3,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+var SpritesmithPlugin = require('webpack-spritesmith');
+
 module.exports = {
   entry: {
     app: Path.resolve(__dirname, '../src/scripts/index.js')
@@ -24,7 +26,7 @@ module.exports = {
     ]),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
-    })
+    }),
   ],
   resolve: {
     alias: {
@@ -47,28 +49,6 @@ module.exports = {
           }
         }
       },
-      {
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              bypassOnDebug: true, // webpack@1.x
-              // disable: true, // webpack@2.x and newer
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(html)$/,
-        use: {
-          loader: 'html-loader',
-          options: {
-            attrs: [':data-src']
-          }
-        }
-      }
     ]
   }
 };
