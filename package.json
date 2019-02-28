@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "swiper": "^4.5.0",
     "webpack-spritesmith": "^1.0.0"
   }
 }
