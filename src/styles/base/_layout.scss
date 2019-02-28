@@ -1,6 +1,5 @@
 .header {
   height: 100px;
-  background: red;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001b67+0,2577ce+50,001b67+100 */
   background: #001b67; /* Old browsers */
   background: -moz-linear-gradient(left, #001b67 0%, #2577ce 50%, #001b67 100%); /* FF3.6-15 */
@@ -9,4 +8,19 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001b67', endColorstr='#001b67',GradientType=1 ); /* IE6-9 */
   box-shadow: 0 4px 12px #000;
   display: flex;
+  width: 100%;
+  z-index: 1;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  background: url("../assets/images/bg.png") repeat-x;
+}
+
+.main-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
 }
