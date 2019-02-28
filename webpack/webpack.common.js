@@ -27,6 +27,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
     }),
+    new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/policy.html'),
+      filename: 'policy.html',
+    }),
     new CopyWebpackPlugin([
       { from: Path.resolve(__dirname, '../src/assets/images/static'), to: 'src/assets/images/static' }
     ]),
