@@ -2,6 +2,15 @@ html, body {
   height: 100%;
 }
 
+html {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 3px rgba(46,46,46,.58);
+}
+
 body {
   background: #07112b;
   width: 100%;

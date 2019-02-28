@@ -17,6 +17,11 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 }
 
 .main-nav-list-i-separator {
@@ -43,4 +48,13 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
   //width: 2px;
   //height: 77px
+}
+
+.main-nav-list-a {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 3px rgba(46,46,46,.58);
 }
