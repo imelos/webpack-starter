@@ -8,4 +8,5 @@
   background: linear-gradient(to right, #001b67 0%,#2577ce 50%,#001b67 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001b67', endColorstr='#001b67',GradientType=1 ); /* IE6-9 */
   box-shadow: 0 4px 12px #000;
+  display: flex;
 }

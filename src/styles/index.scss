@@ -1,8 +1,5 @@
 @import 'vendor/normalize';
 @import 'base/base';
 @import 'base/layout';
-$body-color: blue;
 
-body {
-  color: $body-color;
-}
+@import 'modules/main-nav';
