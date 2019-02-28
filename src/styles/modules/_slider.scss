@@ -3,5 +3,43 @@
   //background: red;
   align-items: center;
   justify-content: center;
-  padding-top: 110px;
+  display: flex;
+}
+
+.slider-container {
+  width: 948px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.swiper-container {
+  width: 948px;
+  height: 600px;
+  //border-radius: 5px;
+}
+
+.swiper-slide {
+  border-radius: 5px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #2c68b6!important;
+  opacity: 1;
+  &.swiper-pagination-bullet-active {
+    background: #fff!important;
+  }
+}
+
+.slider-i {
+  border-radius: 5px;
+  //width: 100%;
+  //height: 100%;
+  display: block;
+  img {
+    border-radius: 5px;
+  }
 }
