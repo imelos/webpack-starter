@@ -15,6 +15,9 @@
   display: flex;
   flex: 1;
   background: url("../assets/images/bg.png") center 0 no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-wrapper {
@@ -25,7 +28,7 @@
 }
 
 .main-slider {
-  height: 900px;
+  //height: 900px;
   display: flex;
   flex: 1;
 }
