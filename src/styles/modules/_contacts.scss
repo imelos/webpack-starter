@@ -21,6 +21,7 @@
 .contacts-list {
   flex-direction: row;
   display: flex;
+  align-items: flex-start;
 }
 
 .contacts-i-body {
@@ -48,5 +49,6 @@
     color: #ebf5ff;
     font-size: 20px;
     font-weight: normal;
+    text-decoration: none;
   }
 }
